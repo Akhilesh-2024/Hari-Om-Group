@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 200px;
   
 }
 
@@ -599,28 +600,22 @@ body{
 
 /* Reviews */
 
+/* Custom Testimonial Styles */
 .Reviews .testimonial-item {
   padding: 30px 30px 30px 60px;
-  margin: 0 15px 30px 0;
+  margin: 15px;
   min-height: 200px;
   box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
   position: relative;
-  background: #fff;
-}
-
-.Reviews .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 10px;
-  border: 6px solid #fff;
-  position: absolute;
-  left: -45px;
+  background: var(--white);
+  border-radius: 8px;
 }
 
 .Reviews .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #000;
+  color: var(--darkbrown);
 }
 
 .Reviews .testimonial-item h4 {
@@ -662,18 +657,64 @@ body{
   margin: 15px auto;
 }
 
-.Reviews .swiper-pagination {
+/* Owl Carousel Custom Styles */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--white) !important;
+  color: var(--darkbrown) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 24px !important;
+  line-height: 40px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-nav button:hover {
+  background: var(--darkbrown) !important;
+  color: var(--white) !important;
+}
+
+.owl-nav .owl-prev {
+  left: -20px;
+}
+
+.owl-nav .owl-next {
+  right: -20px;
+}
+
+.owl-dots {
+  text-align: center;
   margin-top: 20px;
 }
 
-.Reviews .swiper-pagination .swiper-pagination-bullet {
+.owl-dots .owl-dot span {
   width: 12px;
   height: 12px;
   background-color: #d5d7da;
+  display: block;
+  margin: 5px;
+  border-radius: 50%;
 }
 
-.Reviews .swiper-pagination .swiper-pagination-bullet-active {
+.owl-dots .owl-dot.active span {
   background-color: var(--darkbrown);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Reviews .testimonial-item {
+    padding-left: 30px;
+  }
+  
+  .owl-nav button {
+    display: none !important;
+  }
 }
 
 
