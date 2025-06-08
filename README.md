@@ -1,6 +1,6 @@
 # Hari Om Construction – Responsive Website
 
-This is a fully responsive, multi-page website developed for **Hari Om Construction**, a construction company portfolio site built using HTML, CSS, JavaScript, and Bootstrap 5. The website showcases company services, projects, client testimonials, contact information, and more.
+This is a fully responsive, single-page website developed for **Hari Om Construction**, a construction company portfolio site built using HTML, CSS, JavaScript, and Bootstrap 5. The website showcases company services, projects, client testimonials, contact information, and more.
 
 ## Features
 
